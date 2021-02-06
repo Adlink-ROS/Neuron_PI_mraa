@@ -17,7 +17,7 @@ sudo apt install git build-essential swig3.0 python-dev nodejs-dev cmake libjson
 ```bash
 git clone https://github.com/eclipse/mraa.git
 cd mraa
-cmake -Bbuild -H. -DCMAKE_BUILD_TYPE=Release
+cmake -Bbuild -H. -DCMAKE_BUILD_TYPE=Release -DBUILDSWIGNODE=OFF
 cmake --build build
 ```
 
@@ -37,6 +37,8 @@ sudo modprobe gpio-pca953x
 echo "pca9535 0x20" > /sys/bus/i2c/devices/i2c-13/new_device
 echo "sx1509q 0x3e" > /sys/bus/i2c/devices/i2c-1/new_device
 ```
+
+* Python Example (TODO)
 
 * You can refer to the MRAA API to develop your program.
   - C/C++: http://iotdk.intel.com/docs/master/mraa/
