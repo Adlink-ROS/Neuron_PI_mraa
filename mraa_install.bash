@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install dependencies
-sudo apt install -y git build-essential swig3.0 python-dev nodejs-dev cmake libjson-c-dev checkinstall
+sudo apt install -y git build-essential swig3.0 python-dev nodejs-dev cmake libjson-c-dev python3-dev checkinstall
 # Build the code
 git clone https://github.com/eclipse/mraa.git
 cd mraa

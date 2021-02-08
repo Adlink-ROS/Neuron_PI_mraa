@@ -37,13 +37,15 @@ sudo su
 export LD_LIBRARY_PATH=/usr/local/lib
 ```
 
-* Python3 Example (Running Python3 CLI)
+* Testing Python3 Example on Python3 console
 
 ```bash
 import mraa
 pin_40=mraa.Gpio(40)
 pin_40.dir(mraa.DIR_OUT)
+# Pull High
 pin_40.write(1)
+# Pull Low
 pin_40.write(0)
 ```
 
