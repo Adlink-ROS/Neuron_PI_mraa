@@ -40,7 +40,11 @@ export LD_LIBRARY_PATH=/usr/local/lib
 * Python3 Example (Running Python3 CLI)
 
 ```bash
-# TODO
+import mraa
+pin_40=mraa.Gpio(40)
+pin_40.dir(mraa.DIR_OUT)
+pin_40.write(1)
+pin_40.write(0)
 ```
 
 * You can refer to the MRAA API to develop your program.
