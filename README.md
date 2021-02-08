@@ -9,7 +9,7 @@ The pin define of Neuron PI: https://github.com/eclipse/mraa/blob/master/docs/ad
 * Install necessary packages.
 
 ```bash
-sudo apt install git build-essential swig3.0 python-dev nodejs-dev cmake libjson-c-dev
+sudo apt install git build-essential swig3.0 python-dev nodejs-dev cmake libjson-c-dev checkinstall
 ```
 
 * Build
