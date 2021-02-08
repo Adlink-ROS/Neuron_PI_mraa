@@ -53,3 +53,12 @@ pin_40.write(0)
 * You can refer to the MRAA API to develop your program.
   - C/C++: http://iotdk.intel.com/docs/master/mraa/
   - Python: http://iotdk.intel.com/docs/master/mraa/python/
+
+# Troubleshooting
+
+* If you find that the pin doesn't respond to your MRAA API operation suddenly, it might get something wrong on the driver.
+
+```bash
+# Reload the driver
+~/Neuron_PI_mraa/mraa_reload.bash
+```
