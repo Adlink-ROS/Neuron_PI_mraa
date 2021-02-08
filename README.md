@@ -7,6 +7,7 @@ The pin define of Neuron PI: https://github.com/eclipse/mraa/blob/master/docs/ad
 # Install
 
 ```bash
+sudo apt install git
 cd ~
 git clone https://github.com/Adlink-ROS/Neuron_PI_mraa.git
 cd Neuron_PI_mraa
@@ -22,7 +23,7 @@ rm -rf ~/Neuron_PI_mraa
 
 # Usage
 
-* Everytime booting the Neuron PI, please run the init script
+* Everytime booting up the Neuron PI, please run the init script
 
 ```bash
 source ~/Neuron_PI_mraa/mraa_init.bash
