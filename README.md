@@ -24,7 +24,14 @@ cmake --build build
 * Install
 
 ```bash
-cmake --build build --target install
+cd build
+sudo checkinstall -y --pkgname=neuron-pi-mraa --pkgversion=1.0.0
+```
+
+* Uninstall
+
+```bash
+sudo apt remove neuron-pi-mraa
 ```
 
 # Usage
@@ -36,6 +43,7 @@ sudo modprobe i2c_i801
 sudo modprobe gpio-pca953x
 echo "pca9535 0x20" > /sys/bus/i2c/devices/i2c-13/new_device
 echo "sx1509q 0x3e" > /sys/bus/i2c/devices/i2c-1/new_device
+export LD_LIBRARY_PATH=/usr/local/lib
 ```
 
 * Python Example (TODO)
