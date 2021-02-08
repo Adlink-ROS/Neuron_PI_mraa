@@ -22,13 +22,26 @@ rm -rf ~/Neuron_PI_mraa
 
 # Usage
 
-* Everytime open the terminal, please run the init script
+* Everytime booting the Neuron PI, please run the init script
 
 ```bash
 source ~/Neuron_PI_mraa/mraa_init.bash
 ```
 
-* Python Example (TODO)
+* The following commands are necessary every time opening a new terminal.
+
+```bash
+# We need root privilege to control the peripherals
+sudo su
+# Setup the library path
+export LD_LIBRARY_PATH=/usr/local/lib
+```
+
+* Python3 Example (Running Python3 CLI)
+
+```bash
+# TODO
+```
 
 * You can refer to the MRAA API to develop your program.
   - C/C++: http://iotdk.intel.com/docs/master/mraa/
